@@ -37,16 +37,6 @@ const compileSass = {
 };
 
 /*
-    Setup the externals
-    These are libraries that we don't want to bundle up
- */
-const externals = {
-  vue: 'Vue',
-  vuex: 'Vuex',
-  jquery: 'jQuery',
-};
-
-/*
     Setup the dev server¡¡
  */
 const devServer = {
@@ -69,7 +59,6 @@ module.exports = {
   module: {
     rules: [transpile, compileVue, compileSass],
   },
-  externals,
   devServer,
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
