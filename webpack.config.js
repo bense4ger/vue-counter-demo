@@ -37,7 +37,7 @@ const compileSass = {
 };
 
 /*
-    Setup the dev server¡¡
+    Setup the dev server
  */
 const devServer = {
   contentBase: path.resolve(__dirname, './dist'),
